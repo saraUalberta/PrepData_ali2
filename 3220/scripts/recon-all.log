@@ -1,0 +1,1876 @@
+Mon Jan  1 19:38:56 UTC 2018
+/usr/local/freesurfer/subjects/3220
+/usr/local/freesurfer/bin/recon-all
+-all -i sMRI/3220.nii -subjid 3220 -sd /usr/local/freesurfer/subjects
+subjid 3220
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+FREESURFER_HOME /usr/local/freesurfer
+Actual FREESURFER_HOME /usr/local/freesurfer
+build-stamp.txt: freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.0-2beb96c
+Linux ali-2 3.13.0-121-generic #170-Ubuntu SMP Wed Jun 14 09:04:33 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+cputime      unlimited
+filesize     unlimited
+datasize     unlimited
+stacksize    8192 kbytes
+coredumpsize 0 kbytes
+memoryuse    unlimited
+vmemoryuse   unlimited
+descriptors  1024 
+memorylocked 64 kbytes
+maxproc      63798 
+maxlocks     unlimited
+maxsignal    63798 
+maxmessage   819200 
+maxnice      0 
+maxrtprio    0 
+maxrttime    unlimited
+
+             total       used       free     shared    buffers     cached
+Mem:       8176220    4110456    4065764         36      70976    3773024
+-/+ buffers/cache:     266456    7909764
+Swap:      4194300       8208    4186092
+
+########################################
+program versions used
+$Id: recon-all,v 1.580.2.16 2017/01/18 14:11:24 zkaufman Exp $
+$Id: mri_motion_correct.fsl,v 1.15 2016/02/16 17:17:20 zkaufman Exp $
+mri_convert.bin -all-info 
+ProgramName: mri_convert.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+FLIRT version 5.5
+$Id: talairach_avi,v 1.13 2015/12/23 04:25:17 greve Exp $
+mri_convert.bin --version 
+stable6
+ProgramName: tkregister2_cmdl  ProgramArguments: --all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: tkregister2.c,v 1.132.2.1 2016/08/02 21:17:29 greve Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
+ProgramName: mri_make_uchar  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_make_uchar.c,v 1.4 2011/03/02 00:04:14 nicks Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_normalize  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_normalize.c,v 1.88.2.3 2016/12/27 16:47:13 zkaufman Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_watershed  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_watershed.cpp,v 1.103 2016/06/17 18:00:49 zkaufman Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_gcut  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_gcut.cpp,v 1.14 2011/03/02 00:04:16 nicks Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_segment  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_segment.c,v 1.43.2.1 2016/10/27 22:24:52 zkaufman Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_label2label.bin  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_label2label.c,v 1.48.2.2 2016/12/12 14:15:26 zkaufman Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_em_register  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_em_register.c,v 1.105.2.1 2016/10/27 22:25:10 zkaufman Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_normalize  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_ca_normalize.c,v 1.67.2.2 2016/10/27 22:25:09 zkaufman Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_register  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_ca_register.c,v 1.96.2.3 2016/10/27 22:25:10 zkaufman Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_label  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_ca_label.c,v 1.113.2.2 2016/10/27 22:25:10 zkaufman Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_pretess  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_pretess.c,v 1.22 2013/08/30 18:12:25 mreuter Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_fill  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_fill.c,v 1.119 2011/10/25 14:09:58 fischl Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_tessellate  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_tessellate.c,v 1.38.2.1 2016/07/26 18:46:38 zkaufman Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_concatenate_lta.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_concatenate_lta.c,v 1.16 2015/11/21 00:06:20 greve Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_normalize_tp2  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_normalize_tp2.c,v 1.8 2011/03/02 00:04:23 nicks Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_smooth  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_smooth.c,v 1.30 2014/01/21 18:48:21 fischl Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_inflate  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_inflate.c,v 1.45 2016/01/20 23:42:15 greve Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_curvature  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_curvature.c,v 1.31 2011/03/02 00:04:30 nicks Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_sphere  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_sphere.c,v 1.61 2016/01/20 23:42:15 greve Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_fix_topology  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_fix_topology.c,v 1.50.2.1 2016/10/27 22:25:58 zkaufman Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_topo_fixer  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_topo_fixer.cpp,v 1.29 2011/03/02 00:04:34 nicks Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_ca_label  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_ca_label.c,v 1.37 2014/02/04 17:46:42 fischl Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_euler_number  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_euler_number.c,v 1.10 2013/01/14 22:39:14 greve Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_make_surfaces  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_make_surfaces.c,v 1.164.2.4 2016/12/13 22:26:32 zkaufman Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_register  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:56-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_register.c,v 1.63 2016/01/20 23:43:04 greve Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_volmask  ProgramArguments: --all-info  ProgramVersion: $Name:  $  TimeStamp: 2018/01/01-19:38:57-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_volmask.cpp,v 1.26.2.2 2016/11/18 20:05:18 zkaufman Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_anatomical_stats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:57-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_anatomical_stats.c,v 1.79 2016/03/14 15:15:34 greve Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mrisp_paint  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:57-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mrisp_paint.c,v 1.12 2016/03/22 14:47:57 fischl Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_curvature_stats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:57-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_curvature_stats.c,v 1.65 2015/06/04 20:50:51 nicks Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_calc  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:57-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_calc.c,v 1.54.2.1 2016/09/27 18:51:28 greve Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+$Id: mri_robust_register.cpp,v 1.77 2016/01/20 23:36:17 greve Exp $
+
+ProgramName: mri_robust_register.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:57-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_robust_register.cpp,v 1.77 2016/01/20 23:36:17 greve Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+$Id: mri_robust_template.cpp,v 1.54 2016/05/05 21:17:08 mreuter Exp $
+
+ProgramName: mri_robust_template  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:57-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_robust_template.cpp,v 1.54 2016/05/05 21:17:08 mreuter Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_and  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:57-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_and.c,v 1.4 2011/03/02 00:04:13 nicks Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_or  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:57-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_or.c,v 1.5 2013/03/20 15:03:29 lzollei Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_fuse_segmentations  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:57-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_fuse_segmentations.c,v 1.8 2011/03/02 00:04:15 nicks Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_segstats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:57-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_relabel_hypointensities  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2018/01/01-19:38:57-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_relabel_hypointensities.c,v 1.13 2015/05/15 18:44:10 nicks Exp $  User: ubuntu  Machine: ali-2  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+#######################################
+GCADIR /usr/local/freesurfer/average
+GCA RB_all_2016-05-10.vc700.gca
+GCASkull RB_all_withskull_2016-05-10.vc700.gca
+AvgCurvTif folding.atlas.acfb40.noaparc.i12.2016-08-02.tif
+GCSDIR /usr/local/freesurfer/average
+GCS DKaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs
+#######################################
+/usr/local/freesurfer/subjects/3220
+
+ mri_convert /home/ubuntu/sMRI/3220.nii /usr/local/freesurfer/subjects/3220/mri/orig/001.mgz 
+
+mri_convert.bin /home/ubuntu/sMRI/3220.nii /usr/local/freesurfer/subjects/3220/mri/orig/001.mgz 
+INFO: using NIfTI-1 qform 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/ubuntu/sMRI/3220.nii...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to /usr/local/freesurfer/subjects/3220/mri/orig/001.mgz...
+#--------------------------------------------
+#@# MotionCor Mon Jan  1 19:39:10 UTC 2018
+Found 1 runs
+/usr/local/freesurfer/subjects/3220/mri/orig/001.mgz
+Checking for (invalid) multi-frame inputs...
+WARNING: only one run found. This is OK, but motion
+correction cannot be performed on one run, so I'll
+copy the run to rawavg and continue.
+
+ cp /usr/local/freesurfer/subjects/3220/mri/orig/001.mgz /usr/local/freesurfer/subjects/3220/mri/rawavg.mgz 
+
+/usr/local/freesurfer/subjects/3220
+
+ mri_convert /usr/local/freesurfer/subjects/3220/mri/rawavg.mgz /usr/local/freesurfer/subjects/3220/mri/orig.mgz --conform 
+
+mri_convert.bin /usr/local/freesurfer/subjects/3220/mri/rawavg.mgz /usr/local/freesurfer/subjects/3220/mri/orig.mgz --conform 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /usr/local/freesurfer/subjects/3220/mri/rawavg.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+changing data type from short to uchar (noscale = 0)...
+MRIchangeType: Building histogram 
+Reslicing using trilinear interpolation 
+writing to /usr/local/freesurfer/subjects/3220/mri/orig.mgz...
+
+ mri_add_xform_to_header -c /usr/local/freesurfer/subjects/3220/mri/transforms/talairach.xfm /usr/local/freesurfer/subjects/3220/mri/orig.mgz /usr/local/freesurfer/subjects/3220/mri/orig.mgz 
+
+INFO: extension is mgz
+#--------------------------------------------
+#@# Talairach Mon Jan  1 19:39:36 UTC 2018
+/usr/local/freesurfer/subjects/3220/mri
+
+ mri_nu_correct.mni --no-rescale --i orig.mgz --o orig_nu.mgz --n 1 --proto-iters 1000 --distance 50 
+
+/usr/local/freesurfer/subjects/3220/mri
+/usr/local/freesurfer/bin/mri_nu_correct.mni
+--no-rescale --i orig.mgz --o orig_nu.mgz --n 1 --proto-iters 1000 --distance 50
+nIters 1
+$Id: mri_nu_correct.mni,v 1.27 2016/02/26 16:19:49 mreuter Exp $
+Linux ali-2 3.13.0-121-generic #170-Ubuntu SMP Wed Jun 14 09:04:33 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+Mon Jan  1 19:39:36 UTC 2018
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
+/usr/bin/bc
+tmpdir is ./tmp.mri_nu_correct.mni.10199
+/usr/local/freesurfer/subjects/3220/mri
+mri_convert orig.mgz ./tmp.mri_nu_correct.mni.10199/nu0.mnc -odt float
+mri_convert.bin orig.mgz ./tmp.mri_nu_correct.mni.10199/nu0.mnc -odt float 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from orig.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+changing data type from uchar to float (noscale = 0)...
+writing to ./tmp.mri_nu_correct.mni.10199/nu0.mnc...
+ 
+--------------------------------------------------------
+Iteration 1 Mon Jan  1 19:39:40 UTC 2018
+nu_correct -clobber ./tmp.mri_nu_correct.mni.10199/nu0.mnc ./tmp.mri_nu_correct.mni.10199/nu1.mnc -tmpdir ./tmp.mri_nu_correct.mni.10199/0/ -iterations 1000 -distance 50
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+[ubuntu@ali-2:/usr/local/freesurfer/subjects/3220/mri/] [2018-01-01 19:39:41] running:
+  /usr/local/freesurfer/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 1000 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 50 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.10199/0/ ./tmp.mri_nu_correct.mni.10199/nu0.mnc ./tmp.mri_nu_correct.mni.10199/nu1.imp
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+Number of iterations: 20 
+CV of field change: 0.000953521
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ 
+ 
+ 
+mri_convert ./tmp.mri_nu_correct.mni.10199/nu1.mnc orig_nu.mgz --like orig.mgz --conform
+mri_convert.bin ./tmp.mri_nu_correct.mni.10199/nu1.mnc orig_nu.mgz --like orig.mgz --conform 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from ./tmp.mri_nu_correct.mni.10199/nu1.mnc...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+changing data type from float to uchar (noscale = 0)...
+MRIchangeType: Building histogram 
+writing to orig_nu.mgz...
+ 
+ 
+Mon Jan  1 19:41:29 UTC 2018
+mri_nu_correct.mni done
+
+ talairach_avi --i orig_nu.mgz --xfm transforms/talairach.auto.xfm 
+
+talairach_avi log file is transforms/talairach_avi.log...
+Started at Mon Jan 1 19:41:29 UTC 2018
+Ended   at Mon Jan  1 19:44:27 UTC 2018
+talairach_avi done
+
+ cp transforms/talairach.auto.xfm transforms/talairach.xfm 
+
+#--------------------------------------------
+#@# Talairach Failure Detection Mon Jan  1 19:44:30 UTC 2018
+/usr/local/freesurfer/subjects/3220/mri
+
+ talairach_afd -T 0.005 -xfm transforms/talairach.xfm 
+
+talairach_afd: Talairach Transform: transforms/talairach.xfm OK (p=0.7823, pval=0.8469 >= threshold=0.0050)
+
+ awk -f /usr/local/freesurfer/bin/extract_talairach_avi_QA.awk /usr/local/freesurfer/subjects/3220/mri/transforms/talairach_avi.log 
+
+
+ tal_QC_AZS /usr/local/freesurfer/subjects/3220/mri/transforms/talairach_avi.log 
+
+TalAviQA: 0.97621
+z-score: 0
+#--------------------------------------------
+#@# Nu Intensity Correction Mon Jan  1 19:44:30 UTC 2018
+
+ mri_nu_correct.mni --i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --n 2 
+
+/usr/local/freesurfer/subjects/3220/mri
+/usr/local/freesurfer/bin/mri_nu_correct.mni
+--i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --n 2
+nIters 2
+$Id: mri_nu_correct.mni,v 1.27 2016/02/26 16:19:49 mreuter Exp $
+Linux ali-2 3.13.0-121-generic #170-Ubuntu SMP Wed Jun 14 09:04:33 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+Mon Jan  1 19:44:30 UTC 2018
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
+/usr/bin/bc
+tmpdir is ./tmp.mri_nu_correct.mni.17183
+/usr/local/freesurfer/subjects/3220/mri
+mri_convert orig.mgz ./tmp.mri_nu_correct.mni.17183/nu0.mnc -odt float
+mri_convert.bin orig.mgz ./tmp.mri_nu_correct.mni.17183/nu0.mnc -odt float 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from orig.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+changing data type from uchar to float (noscale = 0)...
+writing to ./tmp.mri_nu_correct.mni.17183/nu0.mnc...
+ 
+--------------------------------------------------------
+Iteration 1 Mon Jan  1 19:44:37 UTC 2018
+nu_correct -clobber ./tmp.mri_nu_correct.mni.17183/nu0.mnc ./tmp.mri_nu_correct.mni.17183/nu1.mnc -tmpdir ./tmp.mri_nu_correct.mni.17183/0/
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+[ubuntu@ali-2:/usr/local/freesurfer/subjects/3220/mri/] [2018-01-01 19:44:38] running:
+  /usr/local/freesurfer/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 50 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 200 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.17183/0/ ./tmp.mri_nu_correct.mni.17183/nu0.mnc ./tmp.mri_nu_correct.mni.17183/nu1.imp
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+Number of iterations: 9 
+CV of field change: 0.000994195
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ 
+ 
+--------------------------------------------------------
+Iteration 2 Mon Jan  1 19:47:15 UTC 2018
+nu_correct -clobber ./tmp.mri_nu_correct.mni.17183/nu1.mnc ./tmp.mri_nu_correct.mni.17183/nu2.mnc -tmpdir ./tmp.mri_nu_correct.mni.17183/1/
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+[ubuntu@ali-2:/usr/local/freesurfer/subjects/3220/mri/] [2018-01-01 19:47:16] running:
+  /usr/local/freesurfer/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 50 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 200 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.17183/1/ ./tmp.mri_nu_correct.mni.17183/nu1.mnc ./tmp.mri_nu_correct.mni.17183/nu2.imp
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+Number of iterations: 7 
+CV of field change: 0.000963775
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ 
+ 
+ 
+mri_binarize --i ./tmp.mri_nu_correct.mni.17183/nu2.mnc --min -1 --o ./tmp.mri_nu_correct.mni.17183/ones.mgz
+
+$Id: mri_binarize.c,v 1.43 2016/06/09 20:46:21 greve Exp $
+cwd /usr/local/freesurfer/subjects/3220/mri
+cmdline mri_binarize.bin --i ./tmp.mri_nu_correct.mni.17183/nu2.mnc --min -1 --o ./tmp.mri_nu_correct.mni.17183/ones.mgz 
+sysname  Linux
+hostname ali-2
+machine  x86_64
+user     ubuntu
+
+input      ./tmp.mri_nu_correct.mni.17183/nu2.mnc
+frame      0
+nErode3d   0
+nErode2d   0
+output     ./tmp.mri_nu_correct.mni.17183/ones.mgz
+Binarizing based on threshold
+min        -1
+max        +infinity
+binval        1
+binvalnot     0
+fstart = 0, fend = 0, nframes = 1
+Found 16777216 values in range
+Counting number of voxels in first frame
+Found 16777216 voxels in final mask
+Count: 16777216 16777216.000000 16777216 100.000000
+mri_binarize done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.17183/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.17183/sum.junk --avgwf ./tmp.mri_nu_correct.mni.17183/input.mean.dat
+
+$Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.17183/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.17183/sum.junk --avgwf ./tmp.mri_nu_correct.mni.17183/input.mean.dat 
+sysname  Linux
+hostname ali-2
+machine  x86_64
+user     ubuntu
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.17183/ones.mgz
+Loading orig.mgz
+Voxel Volume is 1 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+  0
+Writing to ./tmp.mri_nu_correct.mni.17183/input.mean.dat
+mri_segstats done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.17183/ones.mgz --i ./tmp.mri_nu_correct.mni.17183/nu2.mnc --sum ./tmp.mri_nu_correct.mni.17183/sum.junk --avgwf ./tmp.mri_nu_correct.mni.17183/output.mean.dat
+
+$Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.17183/ones.mgz --i ./tmp.mri_nu_correct.mni.17183/nu2.mnc --sum ./tmp.mri_nu_correct.mni.17183/sum.junk --avgwf ./tmp.mri_nu_correct.mni.17183/output.mean.dat 
+sysname  Linux
+hostname ali-2
+machine  x86_64
+user     ubuntu
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.17183/ones.mgz
+Loading ./tmp.mri_nu_correct.mni.17183/nu2.mnc
+Voxel Volume is 1 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+  0
+Writing to ./tmp.mri_nu_correct.mni.17183/output.mean.dat
+mri_segstats done
+mris_calc -o ./tmp.mri_nu_correct.mni.17183/nu2.mnc ./tmp.mri_nu_correct.mni.17183/nu2.mnc mul 1.02184333263721073619
+Saving result to './tmp.mri_nu_correct.mni.17183/nu2.mnc' (type = MINC )                       [ ok ]
+mri_convert ./tmp.mri_nu_correct.mni.17183/nu2.mnc nu.mgz --like orig.mgz
+mri_convert.bin ./tmp.mri_nu_correct.mni.17183/nu2.mnc nu.mgz --like orig.mgz 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from ./tmp.mri_nu_correct.mni.17183/nu2.mnc...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+writing to nu.mgz...
+mri_make_uchar nu.mgz transforms/talairach.xfm nu.mgz
+type change took 0 minutes and 28 seconds.
+mapping (15, 98) to ( 3, 110)
+ 
+ 
+Mon Jan  1 19:53:41 UTC 2018
+mri_nu_correct.mni done
+
+ mri_add_xform_to_header -c /usr/local/freesurfer/subjects/3220/mri/transforms/talairach.xfm nu.mgz nu.mgz 
+
+INFO: extension is mgz
+#--------------------------------------------
+#@# Intensity Normalization Mon Jan  1 19:53:45 UTC 2018
+/usr/local/freesurfer/subjects/3220/mri
+
+ mri_normalize -g 1 -mprage nu.mgz T1.mgz 
+
+using max gradient = 1.000
+assuming input volume is MGH (Van der Kouwe) MP-RAGE
+reading from nu.mgz...
+normalizing image...
+talairach transform
+ 1.08947   0.01152  -0.02020  -803.61646;
+-0.04207   1.03129   0.13035  -767.25024;
+ 0.02533  -0.12128   1.08853   46.75318;
+ 0.00000   0.00000   0.00000   1.00000;
+processing without aseg, no1d=0
+MRInormInit(): 
+INFO: Modifying talairach volume c_(r,a,s) based on average_305
+MRInormalize(): 
+MRIsplineNormalize(): npeaks = 15
+Starting OpenSpline(): npoints = 15
+building Voronoi diagram...
+performing soap bubble smoothing, sigma = 8...
+
+Iterating 2 times
+---------------------------------
+3d normalization pass 1 of 2
+white matter peak found at 110
+white matter peak found at 109
+gm peak at 87 (87), valley at 59 (59)
+csf peak at 28, setting threshold to 67
+building Voronoi diagram...
+performing soap bubble smoothing, sigma = 8...
+---------------------------------
+3d normalization pass 2 of 2
+white matter peak found at 110
+white matter peak found at 110
+gm peak at 86 (86), valley at 47 (47)
+csf peak at 27, setting threshold to 66
+building Voronoi diagram...
+performing soap bubble smoothing, sigma = 8...
+Done iterating ---------------------------------
+writing output to T1.mgz
+3D bias adjustment took 4 minutes and 30 seconds.
+#--------------------------------------------
+#@# Skull Stripping Mon Jan  1 19:58:27 UTC 2018
+/usr/local/freesurfer/subjects/3220/mri
+
+ mri_em_register -rusage /usr/local/freesurfer/subjects/3220/touch/rusage.mri_em_register.skull.dat -skull nu.mgz /usr/local/freesurfer/average/RB_all_withskull_2016-05-10.vc700.gca transforms/talairach_with_skull.lta 
+
+aligning to atlas containing skull, setting unknown_nbr_spacing = 5
+
+== Number of threads available to mri_em_register for OpenMP = 1 == 
+reading 1 input volumes...
+logging results to talairach_with_skull.log
+reading '/usr/local/freesurfer/average/RB_all_withskull_2016-05-10.vc700.gca'...
+average std = 22.9   using min determinant for regularization = 52.6
+0 singular and 9002 ill-conditioned covariance matrices regularized
+reading 'nu.mgz'...
+freeing gibbs priors...done.
+accounting for voxel sizes in initial transform
+bounding unknown intensity as < 8.7 or > 569.1 
+total sample mean = 77.6 (1399 zeros)
+************************************************
+spacing=8, using 3243 sample points, tol=1.00e-05...
+************************************************
+register_mri: find_optimal_transform
+find_optimal_transform: nsamples 3243, passno 0, spacing 8
+resetting wm mean[0]: 100 --> 108
+resetting gm mean[0]: 61 --> 61
+input volume #1 is the most T1-like
+using real data threshold=14.0
+skull bounding box = (48, 48, 31) --> (208, 215, 232)
+using (101, 104, 132) as brain centroid...
+mean wm in atlas = 108, using box (81,83,107) --> (120, 124,156) to find MRI wm
+before smoothing, mri peak at 107
+robust fit to distribution - 105 +- 7.5
+after smoothing, mri peak at 105, scaling input intensities by 1.029
+scaling channel 0 by 1.02857
+initial log_p = -4.686
+************************************************
+First Search limited to translation only.
+************************************************
+max log p =    -4.588487 @ (9.091, -9.091, -27.273)
+max log p =    -4.502673 @ (-13.636, 4.545, 13.636)
+max log p =    -4.468033 @ (6.818, -2.273, -2.273)
+max log p =    -4.465535 @ (-1.136, 3.409, 1.136)
+max log p =    -4.440228 @ (1.705, -3.977, -5.114)
+max log p =    -4.440228 @ (0.000, 0.000, 0.000)
+Found translation: (2.8, -7.4, -19.9): log p = -4.440
+****************************************
+Nine parameter search.  iteration 0 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-4.373, old_max_log_p =-4.440 (thresh=-4.4)
+ 1.15000   0.00000   0.00000  -22.96424;
+ 0.00000   1.03837   0.31997  -51.65298;
+ 0.00000  -0.25882   1.11081  -2.66174;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 1 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-4.362, old_max_log_p =-4.373 (thresh=-4.4)
+ 1.05465  -0.12537  -0.03863   12.69571;
+ 0.16136   1.10670   0.34102  -85.15165;
+ 0.00000  -0.25882   1.11081  -2.66174;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 2 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-4.354, old_max_log_p =-4.362 (thresh=-4.4)
+ 1.05465  -0.12537  -0.03863   12.69571;
+ 0.14798   0.98369   0.44686  -80.01715;
+-0.02106  -0.40106   1.05680   27.98197;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 3 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-4.354, old_max_log_p =-4.354 (thresh=-4.3)
+ 1.05465  -0.12537  -0.03863   12.69571;
+ 0.14798   0.98369   0.44686  -80.01715;
+-0.02106  -0.40106   1.05680   27.98197;
+ 0.00000   0.00000   0.00000   1.00000;
+reducing scale to 0.2500
+****************************************
+Nine parameter search.  iteration 4 nscales = 1 ...
+****************************************
+Result so far: scale 0.250: max_log_p=-4.299, old_max_log_p =-4.354 (thresh=-4.3)
+ 1.10403  -0.02653  -0.00801  -10.24918;
+ 0.04397   1.02535   0.34480  -58.79797;
+-0.00425  -0.31300   1.13691   4.05403;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 5 nscales = 1 ...
+****************************************
+Result so far: scale 0.250: max_log_p=-4.299, old_max_log_p =-4.299 (thresh=-4.3)
+ 1.10403  -0.02653  -0.00801  -10.24918;
+ 0.04397   1.02535   0.34480  -58.79797;
+-0.00425  -0.31300   1.13691   4.05403;
+ 0.00000   0.00000   0.00000   1.00000;
+reducing scale to 0.0625
+****************************************
+Nine parameter search.  iteration 6 nscales = 2 ...
+****************************************
+Result so far: scale 0.062: max_log_p=-4.284, old_max_log_p =-4.299 (thresh=-4.3)
+ 1.10273  -0.02650  -0.00801  -10.09083;
+ 0.04406   1.02907   0.33590  -58.15352;
+-0.00390  -0.30565   1.14370   2.02782;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 7 nscales = 2 ...
+****************************************
+Result so far: scale 0.062: max_log_p=-4.281, old_max_log_p =-4.284 (thresh=-4.3)
+ 1.10049  -0.03828  -0.03217  -4.84331;
+ 0.06217   1.02979   0.33581  -60.54282;
+ 0.01416  -0.30640   1.14476   0.17269;
+ 0.00000   0.00000   0.00000   1.00000;
+min search scale 0.025000 reached
+***********************************************
+Computing MAP estimate using 3243 samples...
+***********************************************
+dt = 5.00e-06, momentum=0.80, tol=1.00e-05
+l_intensity = 1.0000
+Aligning input volume to GCA...
+Transform matrix
+ 1.10049  -0.03828  -0.03217  -4.84331;
+ 0.06217   1.02979   0.33581  -60.54282;
+ 0.01416  -0.30640   1.14476   0.17269;
+ 0.00000   0.00000   0.00000   1.00000;
+nsamples 3243
+Quasinewton: input matrix
+ 1.10049  -0.03828  -0.03217  -4.84331;
+ 0.06217   1.02979   0.33581  -60.54282;
+ 0.01416  -0.30640   1.14476   0.17269;
+ 0.00000   0.00000   0.00000   1.00000;
+outof QuasiNewtonEMA: 010: -log(p) =   -0.0  tol 0.000010
+Resulting transform:
+ 1.10049  -0.03828  -0.03217  -4.84331;
+ 0.06217   1.02979   0.33581  -60.54282;
+ 0.01416  -0.30640   1.14476   0.17269;
+ 0.00000   0.00000   0.00000   1.00000;
+
+pass 1, spacing 8: log(p) = -4.281 (old=-4.686)
+transform before final EM align:
+ 1.10049  -0.03828  -0.03217  -4.84331;
+ 0.06217   1.02979   0.33581  -60.54282;
+ 0.01416  -0.30640   1.14476   0.17269;
+ 0.00000   0.00000   0.00000   1.00000;
+
+**************************************************
+ EM alignment process ...
+ Computing final MAP estimate using 364799 samples. 
+**************************************************
+dt = 5.00e-06, momentum=0.80, tol=1.00e-07
+l_intensity = 1.0000
+Aligning input volume to GCA...
+Transform matrix
+ 1.10049  -0.03828  -0.03217  -4.84331;
+ 0.06217   1.02979   0.33581  -60.54282;
+ 0.01416  -0.30640   1.14476   0.17269;
+ 0.00000   0.00000   0.00000   1.00000;
+nsamples 364799
+Quasinewton: input matrix
+ 1.10049  -0.03828  -0.03217  -4.84331;
+ 0.06217   1.02979   0.33581  -60.54282;
+ 0.01416  -0.30640   1.14476   0.17269;
+ 0.00000   0.00000   0.00000   1.00000;
+outof QuasiNewtonEMA: 012: -log(p) =    4.7  tol 0.000000
+final transform:
+ 1.10049  -0.03828  -0.03217  -4.84331;
+ 0.06217   1.02979   0.33581  -60.54282;
+ 0.01416  -0.30640   1.14476   0.17269;
+ 0.00000   0.00000   0.00000   1.00000;
+
+writing output transformation to transforms/talairach_with_skull.lta...
+mri_em_register utimesec    3238.274075
+mri_em_register stimesec    5.495034
+mri_em_register ru_maxrss   609820
+mri_em_register ru_ixrss    0
+mri_em_register ru_idrss    0
+mri_em_register ru_isrss    0
+mri_em_register ru_minflt   161638
+mri_em_register ru_majflt   21
+mri_em_register ru_nswap    0
+mri_em_register ru_inblock  152944
+mri_em_register ru_oublock  32
+mri_em_register ru_msgsnd   0
+mri_em_register ru_msgrcv   0
+mri_em_register ru_nsignals 0
+mri_em_register ru_nvcsw    524
+mri_em_register ru_nivcsw   221534
+registration took 71 minutes and 27 seconds.
+
+ mri_watershed -rusage /usr/local/freesurfer/subjects/3220/touch/rusage.mri_watershed.dat -T1 -brain_atlas /usr/local/freesurfer/average/RB_all_withskull_2016-05-10.vc700.gca transforms/talairach_with_skull.lta T1.mgz brainmask.auto.mgz 
+
+
+Mode:          T1 normalized volume
+Mode:          Use the information of atlas (default parms, --help for details)
+
+*********************************************************
+The input file is T1.mgz
+The output file is brainmask.auto.mgz
+Weighting the input with atlas information before watershed
+
+*************************WATERSHED**************************
+Sorting...
+      first estimation of the COG coord: x=127 y=123 z=130 r=75
+      first estimation of the main basin volume: 1831303 voxels
+      Looking for seedpoints 
+        2 found in the cerebellum 
+        13 found in the rest of the brain 
+      global maximum in x=146, y=95, z=109, Imax=255
+      CSF=20, WM_intensity=110, WM_VARIANCE=5
+      WM_MIN=110, WM_HALF_MIN=110, WM_HALF_MAX=110, WM_MAX=110 
+      preflooding height equal to 10 percent
+done.
+Analyze...
+
+      main basin size=400783466 voxels, voxel volume =1.000 
+                     = 400783466 mmm3 = 400783.456 cm3
+done.
+PostAnalyze...Basin Prior
+ 183 basins merged thanks to atlas 
+      ***** 0 basin(s) merged in 1 iteration(s)
+      ***** 0 voxel(s) added to the main basin
+done.
+Weighting the input with prior template 
+
+****************TEMPLATE DEFORMATION****************
+
+      second estimation of the COG coord: x=125,y=125, z=122, r=9854 iterations
+^^^^^^^^ couldn't find WM with original limits - expanding ^^^^^^
+
+   GLOBAL      CSF_MIN=1, CSF_intensity=2, CSF_MAX=10 , nb = 44918
+  RIGHT_CER    CSF_MIN=1, CSF_intensity=2, CSF_MAX=124 , nb = -1038779749
+  LEFT_CER     CSF_MIN=1, CSF_intensity=2, CSF_MAX=7 , nb = 1144693031
+ RIGHT_BRAIN   CSF_MIN=1, CSF_intensity=2, CSF_MAX=10 , nb = 1144457635
+ LEFT_BRAIN    CSF_MIN=1, CSF_intensity=2, CSF_MAX=5 , nb = 1071331290
+    OTHER      CSF_MIN=0, CSF_intensity=3, CSF_MAX=16 , nb = 1076532130
+   
+                     CSF_MAX  TRANSITION  GM_MIN  GM
+    GLOBAL     
+  before analyzing :    10,      18,        49,   79
+  after  analyzing :    10,      38,        49,   48
+   RIGHT_CER   
+  before analyzing :    124,      62,        45,   79
+  after  analyzing :    34,      62,        62,   66
+   LEFT_CER    
+  before analyzing :    7,      12,        47,   79
+  after  analyzing :    7,      35,        47,   46
+  RIGHT_BRAIN  
+  before analyzing :    10,      20,        52,   77
+  after  analyzing :    10,      41,        52,   50
+  LEFT_BRAIN   
+  before analyzing :    5,      9,        51,   79
+  after  analyzing :    5,      37,        51,   47
+     OTHER     
+  before analyzing :    16,      19,        21,   28
+  after  analyzing :    16,      23,        25,   24
+      mri_strip_skull: done peeling brain
+      highly tesselated surface with 10242 vertices
+      matching...59 iterations
+
+*********************VALIDATION*********************
+curvature mean = -0.014, std = 0.009
+curvature mean = 71.228, std = 6.919
+
+No Rigid alignment: -atlas Mode Off (basic atlas / no registration)
+      before rotation: sse = 2.02, sigma = 2.99
+      after  rotation: sse = 2.02, sigma = 2.99
+Localization of inacurate regions: Erosion-Dilation steps
+      the sse mean is  2.06, its var is  2.46   
+      before Erosion-Dilatation  0.03% of inacurate vertices
+      after  Erosion-Dilatation  0.00% of inacurate vertices
+      Validation of the shape of the surface done.
+Scaling of atlas fields onto current surface fields
+
+********FINAL ITERATIVE TEMPLATE DEFORMATION********
+Compute Local values csf/gray
+Fine Segmentation...44 iterations
+
+      mri_strip_skull: done peeling brain
+
+Brain Size = 1699188 voxels, voxel volume = 1.000 mm3
+           = 1699188 mmm3 = 1699.188 cm3
+
+
+******************************
+Saving brainmask.auto.mgz
+done
+mri_watershed utimesec    75.654537
+mri_watershed stimesec    2.781148
+mri_watershed ru_maxrss   828820
+mri_watershed ru_ixrss    0
+mri_watershed ru_idrss    0
+mri_watershed ru_isrss    0
+mri_watershed ru_minflt   212507
+mri_watershed ru_majflt   0
+mri_watershed ru_nswap    0
+mri_watershed ru_inblock  0
+mri_watershed ru_oublock  2856
+mri_watershed ru_msgsnd   0
+mri_watershed ru_msgrcv   0
+mri_watershed ru_nsignals 0
+mri_watershed ru_nvcsw    0
+mri_watershed ru_nivcsw   5919
+mri_watershed done
+
+ cp brainmask.auto.mgz brainmask.mgz 
+
+#-------------------------------------
+#@# EM Registration Mon Jan  1 21:12:17 UTC 2018
+/usr/local/freesurfer/subjects/3220/mri
+
+ mri_em_register -rusage /usr/local/freesurfer/subjects/3220/touch/rusage.mri_em_register.dat -uns 3 -mask brainmask.mgz nu.mgz /usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca transforms/talairach.lta 
+
+setting unknown_nbr_spacing = 3
+using MR volume brainmask.mgz to mask input volume...
+
+== Number of threads available to mri_em_register for OpenMP = 1 == 
+reading 1 input volumes...
+logging results to talairach.log
+reading '/usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca'...
+average std = 7.3   using min determinant for regularization = 5.3
+0 singular and 841 ill-conditioned covariance matrices regularized
+reading 'nu.mgz'...
+freeing gibbs priors...done.
+accounting for voxel sizes in initial transform
+bounding unknown intensity as < 6.3 or > 503.7 
+total sample mean = 78.8 (1011 zeros)
+************************************************
+spacing=8, using 2830 sample points, tol=1.00e-05...
+************************************************
+register_mri: find_optimal_transform
+find_optimal_transform: nsamples 2830, passno 0, spacing 8
+resetting wm mean[0]: 98 --> 107
+resetting gm mean[0]: 61 --> 61
+input volume #1 is the most T1-like
+using real data threshold=22.0
+skull bounding box = (60, 60, 45) --> (192, 193, 213)
+using (104, 104, 129) as brain centroid...
+mean wm in atlas = 107, using box (88,88,108) --> (120, 120,149) to find MRI wm
+before smoothing, mri peak at 103
+robust fit to distribution - 104 +- 7.1
+after smoothing, mri peak at 104, scaling input intensities by 1.029
+scaling channel 0 by 1.02885
+initial log_p = -4.344
+************************************************
+First Search limited to translation only.
+************************************************
+max log p =    -4.234941 @ (-9.091, -9.091, -9.091)
+max log p =    -3.998698 @ (13.636, 4.545, -13.636)
+max log p =    -3.974667 @ (-2.273, -2.273, 6.818)
+max log p =    -3.941970 @ (-1.136, 5.682, -1.136)
+max log p =    -3.932617 @ (1.705, -1.705, 0.568)
+max log p =    -3.932617 @ (0.000, 0.000, 0.000)
+Found translation: (2.8, -2.8, -16.5): log p = -3.933
+****************************************
+Nine parameter search.  iteration 0 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-3.919, old_max_log_p =-3.933 (thresh=-3.9)
+ 0.99144   0.01704  -0.12941   17.59791;
+ 0.00000   0.99144   0.13053  -17.71004;
+ 0.13053  -0.12941   0.98296  -14.76689;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 1 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-3.919, old_max_log_p =-3.919 (thresh=-3.9)
+ 0.99144   0.01704  -0.12941   17.59791;
+ 0.00000   0.99144   0.13053  -17.71004;
+ 0.13053  -0.12941   0.98296  -14.76689;
+ 0.00000   0.00000   0.00000   1.00000;
+reducing scale to 0.2500
+****************************************
+Nine parameter search.  iteration 2 nscales = 1 ...
+****************************************
+Result so far: scale 0.250: max_log_p=-3.844, old_max_log_p =-3.919 (thresh=-3.9)
+ 1.05668  -0.01643   0.00137  -4.45061;
+ 0.01022   0.96686   0.25630  -35.04347;
+-0.00506  -0.26095   1.00397   17.65497;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 3 nscales = 1 ...
+****************************************
+Result so far: scale 0.250: max_log_p=-3.838, old_max_log_p =-3.844 (thresh=-3.8)
+ 1.05575   0.00922   0.04209  -12.49303;
+-0.02379   1.01136   0.23166  -33.39912;
+-0.03929  -0.22733   1.01155   16.80509;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 4 nscales = 1 ...
+****************************************
+Result so far: scale 0.250: max_log_p=-3.838, old_max_log_p =-3.838 (thresh=-3.8)
+ 1.05575   0.00922   0.04209  -12.49303;
+-0.02379   1.01136   0.23166  -33.39912;
+-0.03929  -0.22733   1.01155   16.80509;
+ 0.00000   0.00000   0.00000   1.00000;
+reducing scale to 0.0625
+****************************************
+Nine parameter search.  iteration 5 nscales = 2 ...
+****************************************
+Result so far: scale 0.062: max_log_p=-3.812, old_max_log_p =-3.838 (thresh=-3.8)
+ 1.05401   0.01607   0.00883  -9.11778;
+-0.02309   1.01256   0.21458  -30.63647;
+-0.00512  -0.21107   1.01961   9.47553;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 6 nscales = 2 ...
+****************************************
+Result so far: scale 0.062: max_log_p=-3.812, old_max_log_p =-3.812 (thresh=-3.8)
+ 1.05401   0.01607   0.00883  -9.11778;
+-0.02309   1.01256   0.21458  -30.63647;
+-0.00512  -0.21107   1.01961   9.47553;
+ 0.00000   0.00000   0.00000   1.00000;
+min search scale 0.025000 reached
+***********************************************
+Computing MAP estimate using 2830 samples...
+***********************************************
+dt = 5.00e-06, momentum=0.80, tol=1.00e-05
+l_intensity = 1.0000
+Aligning input volume to GCA...
+Transform matrix
+ 1.05401   0.01607   0.00883  -9.11778;
+-0.02309   1.01256   0.21458  -30.63647;
+-0.00512  -0.21107   1.01961   9.47553;
+ 0.00000   0.00000   0.00000   1.00000;
+nsamples 2830
+Quasinewton: input matrix
+ 1.05401   0.01607   0.00883  -9.11778;
+-0.02309   1.01256   0.21458  -30.63647;
+-0.00512  -0.21107   1.01961   9.47553;
+ 0.00000   0.00000   0.00000   1.00000;
+outof QuasiNewtonEMA: 009: -log(p) =   -0.0  tol 0.000010
+Resulting transform:
+ 1.05401   0.01607   0.00883  -9.11778;
+-0.02309   1.01256   0.21458  -30.63647;
+-0.00512  -0.21107   1.01961   9.47553;
+ 0.00000   0.00000   0.00000   1.00000;
+
+pass 1, spacing 8: log(p) = -3.812 (old=-4.344)
+transform before final EM align:
+ 1.05401   0.01607   0.00883  -9.11778;
+-0.02309   1.01256   0.21458  -30.63647;
+-0.00512  -0.21107   1.01961   9.47553;
+ 0.00000   0.00000   0.00000   1.00000;
+
+**************************************************
+ EM alignment process ...
+ Computing final MAP estimate using 315557 samples. 
+**************************************************
+dt = 5.00e-06, momentum=0.80, tol=1.00e-07
+l_intensity = 1.0000
+Aligning input volume to GCA...
+Transform matrix
+ 1.05401   0.01607   0.00883  -9.11778;
+-0.02309   1.01256   0.21458  -30.63647;
+-0.00512  -0.21107   1.01961   9.47553;
+ 0.00000   0.00000   0.00000   1.00000;
+nsamples 315557
+Quasinewton: input matrix
+ 1.05401   0.01607   0.00883  -9.11778;
+-0.02309   1.01256   0.21458  -30.63647;
+-0.00512  -0.21107   1.01961   9.47553;
+ 0.00000   0.00000   0.00000   1.00000;
+outof QuasiNewtonEMA: 011: -log(p) =    4.2  tol 0.000000
+final transform:
+ 1.05401   0.01607   0.00883  -9.11778;
+-0.02309   1.01256   0.21458  -30.63647;
+-0.00512  -0.21107   1.01961   9.47553;
+ 0.00000   0.00000   0.00000   1.00000;
+
+writing output transformation to transforms/talairach.lta...
+mri_em_register utimesec    2660.023151
+mri_em_register stimesec    6.043110
+mri_em_register ru_maxrss   601000
+mri_em_register ru_ixrss    0
+mri_em_register ru_idrss    0
+mri_em_register ru_isrss    0
+mri_em_register ru_minflt   160462
+mri_em_register ru_majflt   31
+mri_em_register ru_nswap    0
+mri_em_register ru_inblock  4296
+mri_em_register ru_oublock  24
+mri_em_register ru_msgsnd   0
+mri_em_register ru_msgrcv   0
+mri_em_register ru_nsignals 0
+mri_em_register ru_nvcsw    434
+mri_em_register ru_nivcsw   179642
+registration took 56 minutes and 58 seconds.
+#--------------------------------------
+#@# CA Normalize Mon Jan  1 22:09:15 UTC 2018
+/usr/local/freesurfer/subjects/3220/mri
+
+ mri_ca_normalize -c ctrl_pts.mgz -mask brainmask.mgz nu.mgz /usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca transforms/talairach.lta norm.mgz 
+
+writing control point volume to ctrl_pts.mgz
+using MR volume brainmask.mgz to mask input volume...
+reading 1 input volume
+reading atlas from '/usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca'...
+reading transform from 'transforms/talairach.lta'...
+reading input volume from nu.mgz...
+resetting wm mean[0]: 98 --> 107
+resetting gm mean[0]: 61 --> 61
+input volume #1 is the most T1-like
+using real data threshold=23.0
+skull bounding box = (60, 60, 45) --> (192, 193, 213)
+using (104, 104, 129) as brain centroid...
+mean wm in atlas = 107, using box (88,88,108) --> (120, 120,149) to find MRI wm
+before smoothing, mri peak at 103
+robust fit to distribution - 104 +- 7.1
+after smoothing, mri peak at 104, scaling input intensities by 1.029
+scaling channel 0 by 1.02885
+using 246344 sample points...
+INFO: compute sample coordinates transform
+ 1.05401   0.01607   0.00883  -9.11778;
+-0.02309   1.01256   0.21458  -30.63647;
+-0.00512  -0.21107   1.01961   9.47553;
+ 0.00000   0.00000   0.00000   1.00000;
+INFO: transform used
+finding control points in Left_Cerebral_White_Matter....
+found 39915 control points for structure...
+bounding box (125, 61, 47) --> (188, 172, 206)
+Left_Cerebral_White_Matter: limiting intensities to 102.0 --> 132.0
+0 of 293 (0.0%) samples deleted
+finding control points in Right_Cerebral_White_Matter....
+found 39557 control points for structure...
+bounding box (64, 61, 46) --> (127, 171, 206)
+Right_Cerebral_White_Matter: limiting intensities to 102.0 --> 132.0
+0 of 317 (0.0%) samples deleted
+finding control points in Left_Cerebellum_White_Matter....
+found 3059 control points for structure...
+bounding box (127, 149, 75) --> (172, 191, 127)
+Left_Cerebellum_White_Matter: limiting intensities to 118.0 --> 132.0
+6 of 13 (46.2%) samples deleted
+finding control points in Right_Cerebellum_White_Matter....
+found 2705 control points for structure...
+bounding box (83, 149, 72) --> (125, 188, 127)
+Right_Cerebellum_White_Matter: limiting intensities to 112.0 --> 132.0
+5 of 11 (45.5%) samples deleted
+finding control points in Brain_Stem....
+found 3518 control points for structure...
+bounding box (109, 136, 109) --> (142, 205, 138)
+Brain_Stem: limiting intensities to 102.0 --> 132.0
+0 of 22 (0.0%) samples deleted
+using 656 total control points for intensity normalization...
+bias field = 0.912 +- 0.067
+5 of 645 control points discarded
+finding control points in Left_Cerebral_White_Matter....
+found 39915 control points for structure...
+bounding box (125, 61, 47) --> (188, 172, 206)
+Left_Cerebral_White_Matter: limiting intensities to 88.0 --> 132.0
+0 of 580 (0.0%) samples deleted
+finding control points in Right_Cerebral_White_Matter....
+found 39557 control points for structure...
+bounding box (64, 61, 46) --> (127, 171, 206)
+Right_Cerebral_White_Matter: limiting intensities to 89.0 --> 132.0
+0 of 616 (0.0%) samples deleted
+finding control points in Left_Cerebellum_White_Matter....
+found 3059 control points for structure...
+bounding box (127, 149, 75) --> (172, 191, 127)
+Left_Cerebellum_White_Matter: limiting intensities to 88.0 --> 132.0
+1 of 43 (2.3%) samples deleted
+finding control points in Right_Cerebellum_White_Matter....
+found 2705 control points for structure...
+bounding box (83, 149, 72) --> (125, 188, 127)
+Right_Cerebellum_White_Matter: limiting intensities to 88.0 --> 132.0
+0 of 48 (0.0%) samples deleted
+finding control points in Brain_Stem....
+found 3518 control points for structure...
+bounding box (109, 136, 109) --> (142, 205, 138)
+Brain_Stem: limiting intensities to 88.0 --> 114.0
+1 of 84 (1.2%) samples deleted
+using 1371 total control points for intensity normalization...
+bias field = 1.017 +- 0.078
+6 of 1345 control points discarded
+finding control points in Left_Cerebral_White_Matter....
+found 39915 control points for structure...
+bounding box (125, 61, 47) --> (188, 172, 206)
+Left_Cerebral_White_Matter: limiting intensities to 88.0 --> 132.0
+0 of 606 (0.0%) samples deleted
+finding control points in Right_Cerebral_White_Matter....
+found 39557 control points for structure...
+bounding box (64, 61, 46) --> (127, 171, 206)
+Right_Cerebral_White_Matter: limiting intensities to 88.0 --> 120.0
+1 of 697 (0.1%) samples deleted
+finding control points in Left_Cerebellum_White_Matter....
+found 3059 control points for structure...
+bounding box (127, 149, 75) --> (172, 191, 127)
+Left_Cerebellum_White_Matter: limiting intensities to 88.0 --> 132.0
+46 of 80 (57.5%) samples deleted
+finding control points in Right_Cerebellum_White_Matter....
+found 2705 control points for structure...
+bounding box (83, 149, 72) --> (125, 188, 127)
+Right_Cerebellum_White_Matter: limiting intensities to 88.0 --> 132.0
+54 of 70 (77.1%) samples deleted
+finding control points in Brain_Stem....
+found 3518 control points for structure...
+bounding box (109, 136, 109) --> (142, 205, 138)
+Brain_Stem: limiting intensities to 88.0 --> 132.0
+15 of 132 (11.4%) samples deleted
+using 1585 total control points for intensity normalization...
+bias field = 1.018 +- 0.065
+6 of 1443 control points discarded
+writing normalized volume to norm.mgz...
+writing control points to ctrl_pts.mgz
+freeing GCA...done.
+normalization took 4 minutes and 50 seconds.
+#--------------------------------------
+#@# CA Reg Mon Jan  1 22:14:06 UTC 2018
+/usr/local/freesurfer/subjects/3220/mri
+
+ mri_ca_register -rusage /usr/local/freesurfer/subjects/3220/touch/rusage.mri_ca_register.dat -nobigventricles -T transforms/talairach.lta -align-after -mask brainmask.mgz norm.mgz /usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca transforms/talairach.m3z 
+
+not handling expanded ventricles...
+using previously computed transform transforms/talairach.lta
+renormalizing sequences with structure alignment, equivalent to:
+	-renormalize
+	-regularize_mean 0.500
+	-regularize 0.500
+using MR volume brainmask.mgz to mask input volume...
+
+== Number of threads available to mri_ca_register for OpenMP = 1 == 
+reading 1 input volumes...
+logging results to talairach.log
+reading input volume 'norm.mgz'...
+reading GCA '/usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca'...
+label assignment complete, 0 changed (0.00%)
+det(m_affine) = 1.14 (predicted orig area = 7.0)
+label assignment complete, 0 changed (0.00%)
+freeing gibbs priors...done.
+average std[0] = 5.0
+**************** pass 1 of 1 ************************
+enabling zero nodes
+setting smoothness coefficient to 0.039
+blurring input image with Gaussian with sigma=2.000...
+0000: dt=0.000, rms=0.896, neg=0, invalid=762
+0001: dt=286.672498, rms=0.822 (8.226%), neg=0, invalid=762
+0002: dt=151.606557, rms=0.804 (2.128%), neg=0, invalid=762
+0003: dt=369.920000, rms=0.792 (1.553%), neg=0, invalid=762
+0004: dt=129.472000, rms=0.788 (0.556%), neg=0, invalid=762
+0005: dt=517.888000, rms=0.782 (0.642%), neg=0, invalid=762
+0006: dt=129.472000, rms=0.780 (0.294%), neg=0, invalid=762
+0007: dt=517.888000, rms=0.778 (0.343%), neg=0, invalid=762
+0008: dt=129.472000, rms=0.776 (0.249%), neg=0, invalid=762
+0009: dt=129.472000, rms=0.775 (0.098%), neg=0, invalid=762
+0010: dt=129.472000, rms=0.774 (0.142%), neg=0, invalid=762
+0011: dt=129.472000, rms=0.772 (0.220%), neg=0, invalid=762
+0012: dt=129.472000, rms=0.770 (0.228%), neg=0, invalid=762
+0013: dt=129.472000, rms=0.768 (0.284%), neg=0, invalid=762
+0014: dt=129.472000, rms=0.766 (0.317%), neg=0, invalid=762
+0015: dt=129.472000, rms=0.763 (0.301%), neg=0, invalid=762
+0016: dt=129.472000, rms=0.761 (0.325%), neg=0, invalid=762
+0017: dt=129.472000, rms=0.759 (0.308%), neg=0, invalid=762
+0018: dt=129.472000, rms=0.756 (0.279%), neg=0, invalid=762
+0019: dt=129.472000, rms=0.754 (0.260%), neg=0, invalid=762
+0020: dt=129.472000, rms=0.753 (0.242%), neg=0, invalid=762
+0021: dt=129.472000, rms=0.751 (0.235%), neg=0, invalid=762
+0022: dt=129.472000, rms=0.749 (0.209%), neg=0, invalid=762
+0023: dt=129.472000, rms=0.748 (0.231%), neg=0, invalid=762
+0024: dt=129.472000, rms=0.746 (0.253%), neg=0, invalid=762
+0025: dt=129.472000, rms=0.744 (0.229%), neg=0, invalid=762
+0026: dt=129.472000, rms=0.743 (0.185%), neg=0, invalid=762
+0027: dt=129.472000, rms=0.741 (0.173%), neg=0, invalid=762
+0028: dt=129.472000, rms=0.740 (0.206%), neg=0, invalid=762
+0029: dt=129.472000, rms=0.738 (0.216%), neg=0, invalid=762
+0030: dt=129.472000, rms=0.737 (0.184%), neg=0, invalid=762
+0031: dt=129.472000, rms=0.736 (0.141%), neg=0, invalid=762
+0032: dt=129.472000, rms=0.735 (0.112%), neg=0, invalid=762
+0033: dt=129.472000, rms=0.734 (0.116%), neg=0, invalid=762
+0034: dt=129.472000, rms=0.733 (0.147%), neg=0, invalid=762
+0035: dt=129.472000, rms=0.732 (0.115%), neg=0, invalid=762
+0036: dt=129.472000, rms=0.732 (0.065%), neg=0, invalid=762
+0037: dt=129.472000, rms=0.732 (0.005%), neg=0, invalid=762
+0038: dt=129.472000, rms=0.732 (0.017%), neg=0, invalid=762
+0039: dt=129.472000, rms=0.731 (0.013%), neg=0, invalid=762
+0040: dt=129.472000, rms=0.731 (0.005%), neg=0, invalid=762
+blurring input image with Gaussian with sigma=0.500...
+0000: dt=0.000, rms=0.732, neg=0, invalid=762
+0041: dt=129.472000, rms=0.730 (0.293%), neg=0, invalid=762
+0042: dt=129.472000, rms=0.730 (0.026%), neg=0, invalid=762
+0043: dt=129.472000, rms=0.729 (0.018%), neg=0, invalid=762
+0044: dt=129.472000, rms=0.729 (0.037%), neg=0, invalid=762
+0045: dt=129.472000, rms=0.729 (0.032%), neg=0, invalid=762
+0046: dt=129.472000, rms=0.729 (0.033%), neg=0, invalid=762
+0047: dt=129.472000, rms=0.728 (0.033%), neg=0, invalid=762
+0048: dt=129.472000, rms=0.728 (0.037%), neg=0, invalid=762
