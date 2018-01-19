@@ -1,0 +1,73 @@
+# Table of FreeSurfer cortical parcellation anatomical statistics 
+# 
+# CreationTime 2018/01/19-03:34:57-GMT
+# generating_program mris_anatomical_stats
+# cvs_version $Id: mris_anatomical_stats.c,v 1.79 2016/03/14 15:15:34 greve Exp $
+# mrisurf.c-cvs_version $Id: mrisurf.c,v 1.781.2.6 2016/12/27 16:47:14 zkaufman Exp $
+# cmdline mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.stats -b -a ./rh.BA_exvivo.annot -c ./BA_exvivo.ctab 4093 rh white 
+# sysname  Linux
+# hostname ali-2
+# machine  x86_64
+# user     ubuntu
+# 
+# SUBJECTS_DIR /usr/local/freesurfer/subjects
+# anatomy_type surface
+# subjectname 4093
+# hemi rh
+# AnnotationFile ./rh.BA_exvivo.annot
+# AnnotationFileTimeStamp 2018/01/19 03:34:40
+# Measure Cortex, NumVert, Number of Vertices, 154057, unitless
+# Measure Cortex, WhiteSurfArea, White Surface Total Area, 100689, mm^2
+# Measure BrainSeg, BrainSegVol, Brain Segmentation Volume, 1321529.000000, mm^3
+# Measure BrainSegNotVent, BrainSegVolNotVent, Brain Segmentation Volume Without Ventricles, 1292687.000000, mm^3
+# Measure BrainSegNotVentSurf, BrainSegVolNotVentSurf, Brain Segmentation Volume Without Ventricles from Surf, 1291725.088503, mm^3
+# Measure Cortex, CortexVol Total cortical gray matter volume, 528830.651595, mm^3
+# Measure SupraTentorial, SupraTentorialVol, Supratentorial volume, 1172728.088503, mm^3
+# Measure SupraTentorialNotVent, SupraTentorialVolNotVent, Supratentorial volume, 1147951.088503, mm^3
+# Measure EstimatedTotalIntraCranialVol, eTIV, Estimated Total Intracranial Volume, 1732151.040071, mm^3
+# NTableCols 10
+# TableCol  1 ColHeader StructName
+# TableCol  1 FieldName Structure Name
+# TableCol  1 Units     NA
+# TableCol  2 ColHeader NumVert
+# TableCol  2 FieldName Number of Vertices
+# TableCol  2 Units     unitless
+# TableCol  3 ColHeader SurfArea
+# TableCol  3 FieldName Surface Area
+# TableCol  3 Units     mm^2
+# TableCol  4 ColHeader GrayVol
+# TableCol  4 FieldName Gray Matter Volume
+# TableCol  4 Units     mm^3
+# TableCol  5 ColHeader ThickAvg 
+# TableCol  5 FieldName Average Thickness
+# TableCol  5 Units     mm
+# TableCol  6 ColHeader ThickStd
+# TableCol  6 FieldName Thickness StdDev
+# TableCol  6 Units     mm 
+# TableCol  7 ColHeader MeanCurv
+# TableCol  7 FieldName Integrated Rectified Mean Curvature
+# TableCol  7 Units     mm^-1
+# TableCol  8 ColHeader GausCurv 
+# TableCol  8 FieldName Integrated Rectified Gaussian Curvature
+# TableCol  8 Units     mm^-2
+# TableCol  9 ColHeader  FoldInd
+# TableCol  9 FieldName  Folding Index 
+# TableCol  9 Units      unitless 
+# TableCol 10 ColHeader CurvInd
+# TableCol 10 FieldName Intrinsic Curvature Index
+# TableCol 10 Units     unitless
+# ColHeaders StructName NumVert SurfArea GrayVol ThickAvg ThickStd MeanCurv GausCurv FoldInd CurvInd
+BA1_exvivo                               1017    555   1633  2.222 0.606     0.124     0.038       12     1.6
+BA2_exvivo                               3353   2098   4581  2.193 0.510     0.109     0.025       28     3.2
+BA3a_exvivo                              1186    811   1026  1.666 0.341     0.132     0.030       10     1.5
+BA3b_exvivo                              2014   1321   2743  1.849 0.562     0.103     0.026       15     2.1
+BA4a_exvivo                              1898   1078   2797  2.378 0.589     0.108     0.035       17     2.9
+BA4p_exvivo                              1512    914   2103  2.446 0.535     0.097     0.025        7     1.8
+BA6_exvivo                               9214   5215  16266  2.726 0.519     0.105     0.032       90    12.5
+BA44_exvivo                              4300   2885   8152  2.649 0.448     0.114     0.025       41     4.3
+BA45_exvivo                              4941   3277   9821  2.561 0.547     0.126     0.029       63     5.8
+V1_exvivo                                6260   3989   6805  1.760 0.520     0.147     0.044       91    11.9
+V2_exvivo                               10698   7034  15894  2.128 0.580     0.148     0.043      151    18.9
+MT_exvivo                                2713   1867   4950  2.474 0.543     0.130     0.029       32     2.8
+perirhinal_exvivo                         488    340   1942  3.767 0.853     0.111     0.028        4     0.5
+entorhinal_exvivo                         284    197    736  3.021 0.653     0.102     0.024        2     0.3
