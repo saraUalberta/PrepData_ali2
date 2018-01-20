@@ -1,0 +1,13 @@
+------------------------------
+SUBJECT 3759
+START_TIME Fri Jan 19 07:52:22 UTC 2018
+END_TIME Sat Jan 20 06:58:20 UTC 2018
+RUNTIME_HOURS 23.099
+USER ubuntu
+HOST ali-2
+PROCESSOR x86_64
+OS Linux
+UNAME Linux ali-2 3.13.0-121-generic #170-Ubuntu SMP Wed Jun 14 09:04:33 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+VERSION $Id: recon-all,v 1.580.2.16 2017/01/18 14:11:24 zkaufman Exp $
+CMDPATH /usr/local/freesurfer/bin/recon-all
+CMDARGS -all -i sMRI/3759.nii -subjid 3759 -sd /usr/local/freesurfer/subjects
